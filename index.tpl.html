@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title></title>
+	<meta charset="utf-8" />      
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Leila Saghar" />
+    <title>AGL Evaluation Test</title>
+    <!--<link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />-->
+    <link href="custom-bootstrap/custom-bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />    
+    <link rel="shortcut icon" href="">
+</head>
+<body ng-controller="homeCtrl as m"> 
+    <!-- HEADER AND NAVBAR -->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">              
+                <div class="navbar-header col-md-12">
+                    <a class="navbar-brand" href="/">AGL Evaluation Test</a>
+                </div>
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li role="presentation"><a href="#people"><i class="fa fa-home"></i> People</a></li>
+                    <li role="presentation"><a href="#aboutus"><i class="fa fa-home"></i>About us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>   
+    <div class="container">      
+        <div>
+            <h4>Welcome to AGL Evaluation Test. Please navigate to <a ng-click="m.showPoeple()">People</a> tab to see the People list.</h4>
+        </div>
+        <div id="main" class="row">
+            <div ui-view></div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>used custom css styling the footer <a href="http://getbootstrap.com/customize"> customize Bootstrap's components</a></p>
+        </div>
+    </footer>
+   
+    <!-- build:remove:release -->
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="lib/lodash/dist/lodash.js"></script>
+    <!-- /build -->
+    <!-- build:remove:debug -->    
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-resource/angular-resource.min.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="lib/lodash/dist/lodash.min.js"></script>
+    <!-- /build -->
+   
+    <!-- build:remove:release -->
+    <script src="app/main/app.mdl.js"></script>
+    <script src="app/main/services/data.svc.js"></script>
+    <script src="app/main/controllers/home.ctrl.js"></script>
+    <script src="app/main/controllers/people.ctrl.js"></script>
+    <script src="app/data-mock/data-mock-app.mdl.js"></script>
+    <!-- /build -->
+    <!-- build:remove:debug -->
+    <script src="app/buildConcat.js"></script>   
+    <!-- /build -->
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿<div class="wrapper">
+    <div class="container">
+        <!--<ul class="list-group">
+            <li class="list-group-item disabled" ng-repeat="(key, value) in vm.people">
+                {{key}}
+                <ul ng-if="value !== null">
+                    <li ng-if="person.pets !== null" ng-repeat="person in value">
+                        <ul>
+                            <li class="list-group-item" ng-repeat="pet in person.pets | filter: {type: 'Cat'} | orderBy:'name'">
+                                <span>{{pet.name}}</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul ng-if="vm.people === null || vm.people.length === 0" class="notFound">
+                    <li>Not found</li>
+                </ul>
+            </li>
+        </ul>-->
+
+        <div>Male</div>
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="pet in vm.maleCatsSorted">{{pet.name}}</li>
+        </ul>
+        <div>Female</div>
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="pet in vm.femaleCatsSorted">{{pet.name}}</li>
+        </ul>
+    </div>
+    <div ng-if="vm.errorMessage && vm.errorMessage.length > 0">
+        <span>{{vm.errorMessage}}</span>
+    </div>
+</div>

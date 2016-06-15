@@ -1,0 +1,35 @@
+{
+  "name": "greenfield.lodash.web",
+  "authors": [
+    "leila-saghar <leila.saghar@gmail.com>"
+  ],
+  "description": "sample code to show how to use $http, lodash library to filter,sort data, ng-mock for E2E testing and Bower to manage front-end lib",
+  "main": "index.html",
+  "keywords": [
+    "ng-mock",
+    "E2E",
+    "testing",
+    "bower",
+    "lodash"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-mocks": "^1.5.5",
+    "angular-resource": "^1.5.5",
+    "angular-ui-router": "^0.3.0",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.4",
+    "lodash": "^4.13.1"
+  },
+  "private": true
+}
