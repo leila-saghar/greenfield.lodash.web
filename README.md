@@ -1,15 +1,18 @@
 # greenfield.lodash.web
 
-The main purpose of this project is to demonstrate the front-end architecture using best practices.7
-The highlighted technologies and features used to create the application:
-		Bower as the package manager
-		Angular UI Router: to handle routing within angular
-		Lodash library: to group and filter data
-		ng-resource and $http to fetch data from the web service
-		ng-mock to test the javascript code
-		Grunt as the task runner
-		grunt-wiredep: Inject the Bower dependencies right into the HTML from Grunt.
-		grunt-contrib-concat: Concatenate js files
-		grunt-contrib-jshint: Validate files and log any syntax error in jshint.output.xml
-		grunt-processhtml: Process html files at build time to modify them depending on the release environment
-		Web Compiler: Compile customized bootstrap files and custom css files
+The main purpose of this project is to demonstrate the front-end architecture using best practices.
+
+  <h4>The highlighted technologies and features used to create the application:</h4>
+        <ul>
+            <li><span>Bower as the package manager</span></li>
+            <li><span>Angular UI Router: to handle routing within angular</span></li>
+            <li><span>Lodash library: to group and filter data</span></li>
+            <li><span>ng-resource and $http to fetch data from the web service</span></li>
+            <li><span>ng-mock to test the javascript code</span></li>
+            <li><span>Grunt as the task runner</span></li>
+            <li><span>grunt-wiredep: Inject the Bower dependencies right into the HTML from Grunt.</span></li>
+            <li><span>grunt-contrib-concat: Concatenate js files</span></li>
+            <li><span>grunt-contrib-jshint: Validate files and log any syntax error in jshint.output.xml</span></li>
+            <li><span>grunt-processhtml: Process html files at build time to modify them depending on the release environment</span></li>
+            <li><span>you can see the actual test by clicking <a href="#people"> here </a> or navigating to "People" tab</span></li>
+        </ul>
